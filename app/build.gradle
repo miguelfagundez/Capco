@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.devproject.miguelfagundez.capco"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Retrofit
+    def gson_google_version = "2.8.5"
+    def retrofit_version = "2.6.2"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.google.code.gson:gson:$gson_google_version"
+    //implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+
+    //Android ViewModel and LiveData
+    def lifecycle_version = "2.1.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    //RecyclerView
+    def material_version = "1.0.0"
+    implementation "com.google.android.material:material:$material_version"
+
+    //CardView
+    def card_view_version = "1.0.0"
+    implementation "androidx.cardview:cardview:$card_view_version"
+
+    // Preference manager
+    def preferences_version = "1.1.1"
+    implementation "androidx.preference:preference:$preferences_version"
+
+    // Decoding the JWT to know the user Role
+    def jwt_decode_version = "2.0.0"
+    implementation "com.auth0.android:jwtdecode:$jwt_decode_version"
+
+    //RxJava & RxAndroid - Android Schedulers
+    //implementation "io.reactivex.rxjava3:rxjava:3.0.3"
+    //implementation "io.reactivex.rxjava3:rxandroid:3.0.0"
+    //implementation 'io.reactivex:rxandroid:1.2.1'
+}

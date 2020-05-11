@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Capco</string>
+
+    <string name="employee_details">Employee details</string>
+    <string name="employee_first_name">Employee first name</string>
+    <string name="employee_last_name">Employee last name</string>
+    <string name="employee_role">Employee role</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start">Start</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="access_denied_create">Access denied. Only Admin can create new employees</string>
+    <string name="employee_phone">Employee phone</string>
+    <string name="logout">Logout</string>
+    <string name="validate_data_create">First Name, Last Name, and Role cannot be null</string>
+    <string name="employee_created">Employee Created Successfully</string>
+    <string name="employee_updated">Update Employee Successfully</string>
+    <string name="data_entry_cannot_empty">Username or Password cannot be empty</string>
+    <string name="credentials_not_accepted">Credentials were not accepted</string>
+    <string name="no_employees_found">No employees were found</string>
+    <string name="create_employee">Create a new employee</string>
+    <string name="denied_update_employee">Only Admin can update an employee</string>
+    <string name="denied_delete_employee">Only Admin can delete an employee</string>
+    <string name="delete_successfully">Delete Employee Successfully</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_4dp"
+    android:elevation="@dimen/dimen_8dp"
+    app:cardCornerRadius="@dimen/dimen_8dp"
+    style="@style/AppTheme"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8dp">
+
+        <TextView
+            android:id="@+id/tvEmployeeId"
+            android:layout_width="@dimen/employee_id_height"
+            android:layout_height="@dimen/employee_id_height"
+            android:gravity="center"
+            android:textSize="@dimen/employee_id_text_size"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEmployeeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvEmployeeId"
+            app:layout_constraintTop_toTopOf="@id/tvEmployeeId" />
+
+        <TextView
+            android:id="@+id/tvEmployeeRole"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmployeeName"
+            app:layout_constraintStart_toStartOf="@+id/tvEmployeeName"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmployeeName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
